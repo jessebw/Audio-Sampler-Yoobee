@@ -14,6 +14,20 @@
 </head>
 <body>
     <!-- JS Link -->
-    <script src="js/app.js"></script>
+    <script src="js/app.js">
+        
+        // define a handler
+function doc_keyUp(e) {
+
+    // this would test for whichever key is 40 and the ctrl key at the same time
+    if (e.ctrlKey && e.keyCode == 40) {
+        // call your function to do the thing
+        pauseSound();
+    }
+}
+// register the handler 
+document.addEventListener('keyup', doc_keyUp, false);
+console.log(doc_keyUp(e))
+    </script>
 </body>
 </html>
