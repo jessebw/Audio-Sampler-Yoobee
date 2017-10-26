@@ -3,3 +3,69 @@
   box-sizing: border-box; }
 
 /*# sourceMappingURL=style.css.map */
+
+body {
+	margin: 40px;
+}
+
+.wrapper {
+	display: grid;
+    grid-gap: 10px;
+/*    grid-template-columns: 150px;*/
+    height: 400px;
+    background-color: #fff;
+    color: #444;
+    }
+
+.box {
+    background-color: #22313F;
+    color: #fff;
+    padding: 20px;
+    font-size: 150%;
+
+}
+
+.a {
+	grid-column: 1 / 6;
+	grid-row: 1 / 4;
+}
+.b {
+	grid-column: 1 / 2;
+	grid-row: 4 / 6;
+}
+.c {
+	grid-column: 2 / 3;
+	grid-row: 4 / 6;
+	}
+.d {
+	grid-column: 3 / 4;
+	grid-row: 4 / 6;
+}
+.e {
+	grid-column: 4 / 5;
+	grid-row: 4 / 6;
+}
+.f {
+	grid-column: 5 / 6;
+	grid-row: 4 / 6;
+}
+.g {
+	grid-column: 1 / 2;
+	grid-row: 6 / 8;
+}
+.h {
+	grid-column: 2 / 3;
+	grid-row: 6 / 8;
+}
+.i {
+	grid-column: 3 / 4;
+	grid-row: 6 / 8;
+}
+.j {
+	grid-column: 4 / 5;
+	grid-row: 6 / 8;
+}
+.k {
+	grid-column: 5 / 6;
+	grid-row: 6 / 8;
+}
