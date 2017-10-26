@@ -38,6 +38,9 @@ init();
 
 // JESSE
 //Click Function Initialisation
+
+// FORREST: This function won't work as it's redeclaring a variable multiple times.
+
 function init(){
 			var playButton = document.getElementById('a');
 			playButton.addEventListener('click', playAudioA, false);
@@ -73,7 +76,7 @@ function init(){
 
 
 // CAM
-init();
+// init(); // FORREST: Doesn't need to be called twice in the document
 
 	function playAudioA(){
 		newAudioA.play()
@@ -117,8 +120,75 @@ init();
 
 
 
-
-
-
-
 // FORREST
+
+document.addEventListener("keypress", function(e) {
+	var key = e.keyCode;
+
+	switch (key) {
+		// 's' key is pressed
+		case 115:
+			newAudioA.currentTime = 0;
+			playAudioA();
+			break;
+
+		// 'd' key is pressed
+		case 100:
+			newAudioB.currentTime = 0;
+			playAudioB();
+			break;
+
+		// 'f' key is pressed
+		case 102:
+			newAudioC.currentTime = 0;
+			playAudioC();
+			break;
+
+		// 'g' key is pressed
+		case 103:
+			newAudioD.currentTime = 0;
+			playAudioD();
+			break;
+
+		// 'h' key is pressed
+		case 104:
+			newAudioE.currentTime = 0;
+			playAudioE();
+			break;
+
+		// 'x' key is pressed
+		case 120:
+			newAudioF.currentTime = 0;
+			playAudioF();
+			break;
+
+		// 'c' key is pressed
+		case 99:
+			newAudioG.currentTime = 0;
+			playAudioG();
+			break;
+
+		// 'v' key is pressed
+		case 118:
+			newAudioH.currentTime = 0;
+			playAudioH();
+			break;
+
+		// 'b' key is pressed
+		case 98:
+			newAudioI.currentTime = 0;
+			playAudioI();
+			break;
+
+		// 'h' key is pressed
+		case 110:
+			newAudioJ.currentTime = 0;
+			newAudioJ();
+			break;
+
+		// Default case runs if the case doesn't match
+		default:
+			console.log("This key isn't registered");
+			break;
+	}
+});

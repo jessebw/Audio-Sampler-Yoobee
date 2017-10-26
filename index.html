@@ -28,20 +28,25 @@
     </div>
 
     <!-- JS Link -->
-    <script src="js/app.js">
+    <script src="js/app.js"></script>
+    
+    <!-- Local Script -->
+    <!-- This script should be moved to the app.js file but I don't think it's needed -->
+    <script>
         
         // define a handler
-function doc_keyUp(e) {
+        function doc_keyUp(e) {
 
-    // this would test for whichever key is 40 and the ctrl key at the same time
-    if (e.ctrlKey && e.keyCode == 40) {
-        // call your function to do the thing
-        pauseSound();
-    }
-}
-// register the handler 
-document.addEventListener('keyup', doc_keyUp, false);
-console.log(doc_keyUp(e))
+            // this would test for whichever key is 40 and the ctrl key at the same time
+            if (e.ctrlKey && e.keyCode == 40) {
+                // call your function to do the thing
+                pauseSound();
+            }
+        }
+
+        // register the handler 
+        document.addEventListener('keyup', doc_keyUp, false);
+        console.log(doc_keyUp(e))
     </script>
 </body>
 </html>
