@@ -39,34 +39,34 @@ init();
 // JESSE
 //Click Function Initialisation
 function init(){
-			var playButton = document.getElementsByClassName('a');
+			var playButton = document.getElementById('a');
 			playButton.addEventListener('click', playAudioA, false);
 
-			var playButton = document.getElementsByClassName('b');
+			var playButton = document.getElementById('b');
 			playButton.addEventListener('click', playAudioB, false);
 			
-			var playButton = document.getElementsByClassName('c');
+			var playButton = document.getElementById('c');
 			playButton.addEventListener('click', playAudioC, false);
 
-			var playButton = document.getElementsByClassName('d');
+			var playButton = document.getElementById('d');
 			playButton.addEventListener('click', playAudioD, false);
 
-			var playButton = document.getElementsByClassName('e');
+			var playButton = document.getElementById('e');
 			playButton.addEventListener('click', playAudioE, false);
 			
-			var playButton = document.getElementsByClassName('f');
+			var playButton = document.getElementById('f');
 			playButton.addEventListener('click', playAudioF, false);
 
-			var playButton = document.getElementsByClassName('h');
+			var playButton = document.getElementById('g');
 			playButton.addEventListener('click', playAudioG, false);
 
-			var playButton = document.getElementsByClassName('i');
+			var playButton = document.getElementById('h');
 			playButton.addEventListener('click', playAudioH, false);
 			
-			var playButton = document.getElementsByClassName('j');
+			var playButton = document.getElementById('i');
 			playButton.addEventListener('click', playAudioI, false);
 
-			var playButton = document.getElementsByClassName('k');
+			var playButton = document.getElementById('j');
 			playButton.addEventListener('click', playAudioJ, false);
 			console.log('init working');
 		}//init end ***
