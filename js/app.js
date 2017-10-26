@@ -183,7 +183,7 @@ document.addEventListener("keypress", function(e) {
 		// 'h' key is pressed
 		case 110:
 			newAudioJ.currentTime = 0;
-			newAudioJ();
+			playAudioJ();
 			break;
 
 		// Default case runs if the case doesn't match
