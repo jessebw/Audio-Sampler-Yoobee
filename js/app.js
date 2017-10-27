@@ -39,47 +39,45 @@ init();
 // JESSE
 //Click Function Initialisation
 
-// FORREST: This function won't work as it's redeclaring a variable multiple times.
-
 function init(){
-			var playButton = document.getElementById('a');
-			playButton.addEventListener('click', playAudioA, false);
+		var playButtonA = document.getElementById('a');
+		playButtonA.addEventListener('click', playAudioA, false);
 
-			var playButton = document.getElementById('b');
-			playButton.addEventListener('click', playAudioB, false);
+		var playButtonB = document.getElementById('b');
+		playButtonB.addEventListener('click', playAudioB, false);
 			
-			var playButton = document.getElementById('c');
-			playButton.addEventListener('click', playAudioC, false);
+		var playButtonC = document.getElementById('c');
+		playButtonC.addEventListener('click', playAudioC, false);
 
-			var playButton = document.getElementById('d');
-			playButton.addEventListener('click', playAudioD, false);
+		var playButtonD = document.getElementById('d');
+		playButtonD.addEventListener('click', playAudioD, false);
 
-			var playButton = document.getElementById('e');
-			playButton.addEventListener('click', playAudioE, false);
+		var playButtonE = document.getElementById('e');
+		playButtonE.addEventListener('click', playAudioE, false);
 			
-			var playButton = document.getElementById('f');
-			playButton.addEventListener('click', playAudioF, false);
+		var playButtonF = document.getElementById('f');
+		playButtonF.addEventListener('click', playAudioF, false);
 
-			var playButton = document.getElementById('g');
-			playButton.addEventListener('click', playAudioG, false);
+		var playButtonG = document.getElementById('g');
+		playButtonG.addEventListener('click', playAudioG, false);
 
-			var playButton = document.getElementById('h');
-			playButton.addEventListener('click', playAudioH, false);
+		var playButtonH = document.getElementById('h');
+		playButtonH.addEventListener('click', playAudioH, false);
 			
-			var playButton = document.getElementById('i');
-			playButton.addEventListener('click', playAudioI, false);
+		var playButtonI = document.getElementById('i');
+		playButtonI.addEventListener('click', playAudioI, false);
 
-			var playButton = document.getElementById('j');
-			playButton.addEventListener('click', playAudioJ, false);
-			console.log('init working');
+		var playButtonJ = document.getElementById('j');
+		playButtonJ.addEventListener('click', playAudioJ, false);
 		}//init end ***
 
 
 // CAM
-// init(); // FORREST: Doesn't need to be called twice in the document
 
 	function playAudioA(){
-		newAudioA.play()
+		console.log('color change here?');
+		changeColor();
+		newAudioA.play();
 	}
 	
 	function playAudioB(){
@@ -192,3 +190,37 @@ document.addEventListener("keypress", function(e) {
 			break;
 	}
 });
+
+
+function changeColor() {
+	console.log('b');
+	var testIt = document.getElementsByClassName('divTwo');
+	for (var i = testIt.length - 1; i >= 0; i--) {
+		console.log('loop working');
+		testIt[i].style.backgroundColor = '#5D6169';
+	}
+}
+
+
+// switch (changeColor) {
+// 	case 'playAudioA':
+// 	console.log('changeA');
+// 	break;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
